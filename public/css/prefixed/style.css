@@ -1,0 +1,22 @@
+h1 {
+  color: #9356DC;
+}
+
+h2 {
+  padding: 5px;
+}
+
+.header {
+  margin: 15px;
+}
+.header--img {
+  border-radius: 5px;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uLy4uL3Nhc3Mvc3R5bGUuc2NzcyIsIi4uLy4uLy4uL3Nhc3MvdXRpbHMvX3ZhcmlhYmxlcy5zY3NzIiwiLi4vc3R5bGUuY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUtBO0VBQ0ksY0NOZTtBQ0VuQjs7QUZPQTtFQUNJLFlBQUE7QUVKSjs7QUZPQTtFQUNJLFlBQUE7QUVKSjtBRktJO0VBQ0ksa0JBQUE7QUVIUjs7QUZPQTtFQUNJLG9CQUFBO0VBQUEsb0JBQUE7RUFBQSxhQUFBO0FFSkoiLCJmaWxlIjoic3R5bGUuY3NzIn0= */

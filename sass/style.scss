@@ -1,0 +1,24 @@
+@import "./utils/variables";
+@import "./utils/fonctions";
+@import "./utils/mixins";
+@import "./utils/extensions";
+@import "./base/fonts";
+
+h1 {
+    color: $couleur-primaire;
+}
+
+h2 {
+    padding: 5px;
+}
+
+.header {
+    margin: 15px;
+    &--img {
+        border-radius: 5px;
+    }
+}
+
+nav {
+    display: flex;
+}

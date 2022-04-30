@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+h1 {
+  color: #9356DC;
+}
+
+h2 {
+  padding: 5px;
+}
+
+.header {
+  margin: 15px;
+}
+.header--img {
+  border-radius: 5px;
+}
+
+nav {
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */

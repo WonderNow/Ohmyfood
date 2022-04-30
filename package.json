@@ -1,0 +1,13 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Projet n°3 OpenClassrooms - Ohmyfood by Tom Gasche",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./public/css/style.css",
+    "prefix": "postcss ./public/css/style.css --use autoprefixer -d ./public/css/prefixed/"
+  },
+  "author": "Tom Gasche",
+  "license": "ISC",
+  "browserslist": "last 4 versions"
+}
