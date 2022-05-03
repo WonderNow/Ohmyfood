@@ -1,21 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-h1 {
-  color: #9356DC;
+html {
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
-h2 {
-  padding: 5px;
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
-.header {
-  margin: 15px;
-}
-.header--img {
-  border-radius: 5px;
+body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
 }
 
-nav {
+ol, ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  text-align: center;
+  padding: 12px 0 10px 0;
+  box-shadow: 0 0 10px black;
+}
+header h1 {
+  font-family: Shrikhand, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.localisation {
+  padding: 20px 0 20px 0;
   display: flex;
+  justify-content: center;
+  background-color: #EAEAEA;
+}
+.localisation .fa-map-marker-alt {
+  padding-right: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

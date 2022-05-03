@@ -1,0 +1,20 @@
+header {
+    text-align: center;
+    padding: 12px 0 10px 0;
+    box-shadow: 0 0 10px black;
+    h1 {
+        font-family: Shrikhand, Helvetica, sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+    }
+}
+
+.localisation {
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #EAEAEA;
+    .fa-map-marker-alt {
+        padding-right: 18px;
+    }
+}
