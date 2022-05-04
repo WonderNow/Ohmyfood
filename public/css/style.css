@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 html {
   box-sizing: border-box;
   font-size: 16px;
@@ -23,25 +23,38 @@ img {
   height: auto;
 }
 
+body {
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
 header {
   text-align: center;
   padding: 12px 0 10px 0;
-  box-shadow: 0 0 10px black;
+  box-shadow: 0 0 5px rgb(109, 109, 109);
+  position: relative;
 }
 header h1 {
   font-family: Shrikhand, Helvetica, sans-serif;
   font-size: 32px;
   font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .localisation {
-  padding: 20px 0 20px 0;
+  padding: 18px 0 18px 0;
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #EAEAEA;
 }
 .localisation .fa-map-marker-alt {
   padding-right: 18px;
+  font-size: 20px;
+}
+.localisation__text {
+  font-size: 20px;
+  font-weight: 700;
+  color: #414141;
 }
 
 /*# sourceMappingURL=style.css.map */
