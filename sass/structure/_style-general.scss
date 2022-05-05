@@ -5,7 +5,7 @@ body {
 header {
     text-align: center;
     padding: 12px 0 10px 0;
-    box-shadow: 0 0 5px rgb(109, 109, 109);
+    box-shadow: 0 0 6px 3px rgb(199, 199, 199);
     position: relative;
     h1 {
         font-family: Shrikhand, Helvetica, sans-serif;
@@ -28,6 +28,35 @@ header {
     &__text {
         font-size: 20px;
         font-weight: 700;
-        color: #414141;
+        color: #4a4a4a;
+    }
+}
+
+.explorer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 35px 0 35px 0;
+    background-color: #F6F6F6;
+    h2 {
+        font-size: 30px;
+        font-weight: 900;
+        margin-bottom: 20px;
+        padding: 0 14% 0 14%;
+    }
+    h3 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #777777;
+        padding: 0 12% 0 12%;
+        margin-bottom: 30px;
+    }
+    a {
+        text-decoration: none;
+    }
+    .bouton-principal {
+        @include bouton-principal;
     }
 }
