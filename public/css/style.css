@@ -113,4 +113,17 @@ header {
   text-decoration: none;
 }
 
+.fonctionnement {
+  margin: 35px 5% 0 5%;
+}
+.fonctionnement h2 {
+  margin-bottom: 25px;
+}
+.fonctionnement .categorie {
+  display: flex;
+}
+.fonctionnement .box {
+  display: flex;
+}
+
 /*# sourceMappingURL=style.css.map */

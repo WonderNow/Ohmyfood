@@ -42,3 +42,31 @@ header {
         text-decoration: none;
     }
 }
+
+.fonctionnement {
+    margin: 35px 5% 0 5%;
+    h2 {
+        margin-bottom: 25px;
+    }
+    .categorie {
+        display: flex;
+        &___numero {
+
+        }
+        &__cercle {
+
+        }
+        p {
+
+        }
+    }
+    .box {
+        display: flex;
+        .fa-map-marker-alt {
+
+        }
+        &__texte {
+            
+        }
+    }
+}
