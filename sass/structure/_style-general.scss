@@ -50,23 +50,66 @@ header {
     }
     .categorie {
         display: flex;
-        &___numero {
-
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 30px;
+        cursor: default;
+        .cercle {
+            position: absolute;
+            margin-right: 84%;
+            width: 30px;
+            height: 30px;
+            border-radius: 15px;
+            background: $couleur-primaire;
+            color: #fff;
+            text-align: center;
+            line-height: 200%;
+            pointer-events: none;
+            z-index: 2;
         }
-        &__cercle {
-
-        }
-        p {
-
-        }
-    }
-    .box {
-        display: flex;
-        .fa-map-marker-alt {
-
-        }
-        &__texte {
-            
+        .box {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            padding-left: 10%;
+            background-color: #F6F6F6;
+            width: 94%;
+            height: 85px;
+            border-radius: 20px;
+            box-shadow: 0 5px 14px rgb(215, 215, 215);
+            transition: 0.2s;
+            .fa-mobile-alt {
+                font-size: 25px;
+                color: #7E7E7E;
+                padding-right: 7px;
+            }
+            .fa-list {
+                font-size: 23px;
+                color: #7E7E7E;
+            }
+            .fa-store {
+                font-size: 20px;
+                color: #7E7E7E;
+            }
+            &__texte {
+                font-weight: 800;
+                font-size: 18px;
+                color: rgb(51, 51, 51);
+                padding-left: 6%;
+                padding-bottom: 1px;
+            }
+            &:hover {
+                background-color: #F5EDFF;
+                .fa-mobile-alt {
+                    color: $couleur-primaire;
+                }
+                .fa-list {
+                    color: $couleur-primaire;
+                }
+                .fa-store {
+                    color: $couleur-primaire;
+                }
+            }
         }
     }
 }

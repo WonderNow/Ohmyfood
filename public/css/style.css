@@ -121,9 +121,67 @@ header {
 }
 .fonctionnement .categorie {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  cursor: default;
 }
-.fonctionnement .box {
+.fonctionnement .categorie .cercle {
+  position: absolute;
+  margin-right: 84%;
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+  background: #9356DC;
+  color: #fff;
+  text-align: center;
+  line-height: 200%;
+  pointer-events: none;
+  z-index: 2;
+}
+.fonctionnement .categorie .box {
   display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10%;
+  background-color: #F6F6F6;
+  width: 94%;
+  height: 85px;
+  border-radius: 20px;
+  box-shadow: 0 5px 14px rgb(215, 215, 215);
+  transition: 0.2s;
+}
+.fonctionnement .categorie .box .fa-mobile-alt {
+  font-size: 25px;
+  color: #7E7E7E;
+  padding-right: 7px;
+}
+.fonctionnement .categorie .box .fa-list {
+  font-size: 23px;
+  color: #7E7E7E;
+}
+.fonctionnement .categorie .box .fa-store {
+  font-size: 20px;
+  color: #7E7E7E;
+}
+.fonctionnement .categorie .box__texte {
+  font-weight: 800;
+  font-size: 18px;
+  color: rgb(51, 51, 51);
+  padding-left: 6%;
+  padding-bottom: 1px;
+}
+.fonctionnement .categorie .box:hover {
+  background-color: #F5EDFF;
+}
+.fonctionnement .categorie .box:hover .fa-mobile-alt {
+  color: #9356DC;
+}
+.fonctionnement .categorie .box:hover .fa-list {
+  color: #9356DC;
+}
+.fonctionnement .categorie .box:hover .fa-store {
+  color: #9356DC;
 }
 
 /*# sourceMappingURL=style.css.map */
