@@ -1,16 +1,22 @@
 @mixin bouton-principal {
-        width: 260px;
-        height: 60px;
-        border-radius: 90px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: linear-gradient(0355deg, rgba(147,86,220,1) -20%, rgba(255,121,218,1) 100%);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.285);
-        p {
-            color: white;
-            font-size: 19px;
-            font-weight: 500;
-            padding-bottom: 2px;
-        }
+    width: 260px;
+    height: 60px;
+    border-radius: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(355deg, rgba(147,86,220,1) -20%, rgba(255,121,218,1) 100%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.285);
+    transition: 0.2s;
+    p {
+        color: white;
+        font-size: 19px;
+        font-weight: 500;
+        padding-bottom: 2px;
+    }
+    &:hover {
+        background: linear-gradient(351deg, rgba(147,86,220,1) -25%, rgba(255,121,218,1) 100%);
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.450);
+        transform: scale(0.96);
+    }
 }
