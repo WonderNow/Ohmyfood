@@ -1,0 +1,25 @@
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-family: Shrikhand, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 900;
+}
+
+h3 {
+    font-size: 22px;
+    font-weight: 400;
+    color: #777777;
+}
+
+.bouton-principal {
+    @include bouton-principal;
+}

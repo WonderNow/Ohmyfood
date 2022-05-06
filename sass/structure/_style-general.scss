@@ -1,18 +1,8 @@
-body {
-    font-family: 'Roboto', Arial, Helvetica, sans-serif;
-}
-
 header {
     text-align: center;
     padding: 14px 0 12px 0;
     box-shadow: 0 0 6px 3px rgb(199, 199, 199);
     position: relative;
-    h1 {
-        font-family: Shrikhand, Helvetica, sans-serif;
-        font-size: 32px;
-        font-weight: 700;
-        letter-spacing: 1px;
-    }
 }
 
 .localisation {
@@ -41,22 +31,14 @@ header {
     padding: 35px 0 50px 0;
     background-color: #F6F6F6;
     h2 {
-        font-size: 30px;
-        font-weight: 900;
         margin-bottom: 20px;
         padding: 0 14% 0 14%;
     }
     h3 {
-        font-size: 22px;
-        font-weight: 400;
-        color: #777777;
         padding: 0 12% 0 12%;
         margin-bottom: 30px;
     }
     a {
         text-decoration: none;
-    }
-    .bouton-principal {
-        @include bouton-principal;
     }
 }
