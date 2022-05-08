@@ -127,6 +127,10 @@ header {
             border-radius: 20px;
             box-shadow: 0 5px 14px rgb(215, 215, 215);
             background-color: none;
+            transition: 0.2s;
+            &:hover {
+                transform: scale(1.02);
+            }
             img {
                 object-fit: cover;
                 width: 100%;
@@ -149,9 +153,26 @@ header {
                     }
                 }
                 .coeur {
-                    margin-top: 6px;
-                    font-size: 30px;
-                    .fa-heart {
+                    .fas {
+                        cursor: pointer;
+                        font-size: 30px;
+                        margin-top: 6px;
+                        position: absolute;
+                        color: transparent; // hide text fill
+                        background-image: linear-gradient(355deg, rgba(147,86,220,1) -20%, rgba(255,121,218,1) 100%);
+                        background-clip: text; // use text as clipping mask for bg
+                        -webkit-background-clip: text;
+                        opacity: 0%;
+                        transition: 0.2s;
+                        &:hover {
+                            opacity: 100%;
+                            transform: scale(1.2);
+                        }
+                    }
+                    .far {
+                        pointer-events: none;
+                        font-size: 30px;
+                        margin-top: 6px;
                         color: #000;
                     }
                 }

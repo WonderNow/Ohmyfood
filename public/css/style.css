@@ -57,9 +57,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(355deg, rgb(147, 86, 220) -20%, rgb(255, 121, 218) 100%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.285);
   transition: 0.2s;
+  background: linear-gradient(355deg, rgb(147, 86, 220) -20%, rgb(255, 121, 218) 100%);
 }
 .bouton-principal p {
   color: white;
@@ -68,7 +68,6 @@ p {
   padding-bottom: 2px;
 }
 .bouton-principal:hover {
-  background: linear-gradient(351deg, rgb(147, 86, 220) -25%, rgb(255, 121, 218) 100%);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
   transform: scale(0.96);
 }
@@ -204,6 +203,10 @@ header {
   border-radius: 20px;
   box-shadow: 0 5px 14px rgb(215, 215, 215);
   background-color: none;
+  transition: 0.2s;
+}
+.restaurants__margin .restaurants__box:hover {
+  transform: scale(1.02);
 }
 .restaurants__margin .restaurants__box img {
   object-fit: cover;
@@ -225,11 +228,26 @@ header {
 .restaurants__margin .restaurants__box--details .texte-restaurant .ville-restaurant {
   color: #525252;
 }
-.restaurants__margin .restaurants__box--details .coeur {
-  margin-top: 6px;
+.restaurants__margin .restaurants__box--details .coeur .fas {
+  cursor: pointer;
   font-size: 30px;
+  margin-top: 6px;
+  position: absolute;
+  color: transparent;
+  background-image: linear-gradient(355deg, rgb(147, 86, 220) -20%, rgb(255, 121, 218) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0%;
+  transition: 0.2s;
 }
-.restaurants__margin .restaurants__box--details .coeur .fa-heart {
+.restaurants__margin .restaurants__box--details .coeur .fas:hover {
+  opacity: 100%;
+  transform: scale(1.2);
+}
+.restaurants__margin .restaurants__box--details .coeur .far {
+  pointer-events: none;
+  font-size: 30px;
+  margin-top: 6px;
   color: #000;
 }
 
