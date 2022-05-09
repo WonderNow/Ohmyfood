@@ -57,9 +57,9 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.285);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.275);
   transition: 0.2s;
-  background: linear-gradient(355deg, rgb(147, 86, 220) -20%, rgb(255, 121, 218) 100%);
+  background: linear-gradient(355deg, rgb(147, 86, 220) 2%, rgb(255, 121, 218) 100%);
 }
 .bouton-principal p {
   color: white;
@@ -68,8 +68,9 @@ p {
   padding-bottom: 2px;
 }
 .bouton-principal:hover {
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.45);
-  transform: scale(0.96);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.475);
+  transform: scale(1.02);
+  filter: brightness(108%);
 }
 
 html {
