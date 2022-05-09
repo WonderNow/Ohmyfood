@@ -39,12 +39,12 @@
         }
         a {
             text-decoration: none;
+            color: #fff;
         }
         p {
             margin-bottom: 11px;
             font-size: 17px;
-            color: #fff;
-            width: 100%;
+            width: max-content;
             &:hover {
                 text-decoration: underline;
             }
