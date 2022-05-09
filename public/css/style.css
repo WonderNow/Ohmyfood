@@ -270,6 +270,9 @@ footer .footer-margin h1 {
   letter-spacing: 1px;
   color: #fff;
 }
+footer .footer-margin a {
+  text-decoration: none;
+}
 footer .footer-margin p {
   margin-bottom: 11px;
   font-size: 17px;
