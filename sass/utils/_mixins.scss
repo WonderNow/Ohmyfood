@@ -23,3 +23,35 @@
         transform: scale(0.96);
     }
 }
+
+@mixin footer {
+    background-color: #353535;
+    .footer-margin {
+        margin: 0 6% 0 6%;
+        padding: 6% 0 6% 0;
+        h1 {
+            margin-bottom: 21px;
+            font-size: 22px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        p {
+            margin-bottom: 11px;
+            font-size: 17px;
+            color: #fff;
+            width: 100%;
+            &:hover {
+                text-decoration: underline;
+            }
+            .fa-utensils {
+                padding-right: 16px;
+                font-size: 15px;
+            }
+            .fa-hands-helping {
+                padding-right: 10px;
+                font-size: 15px;
+            }
+        }
+    }
+}

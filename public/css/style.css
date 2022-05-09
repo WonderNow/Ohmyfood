@@ -72,6 +72,10 @@ p {
   transform: scale(0.96);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   text-align: center;
   padding: 14px 0 12px 0;
@@ -250,6 +254,38 @@ header {
   font-size: 30px;
   margin-top: 6px;
   color: #000;
+}
+
+footer {
+  background-color: #353535;
+}
+footer .footer-margin {
+  margin: 0 6% 0 6%;
+  padding: 6% 0 6% 0;
+}
+footer .footer-margin h1 {
+  margin-bottom: 21px;
+  font-size: 22px;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: #fff;
+}
+footer .footer-margin p {
+  margin-bottom: 11px;
+  font-size: 17px;
+  color: #fff;
+  width: 100%;
+}
+footer .footer-margin p:hover {
+  text-decoration: underline;
+}
+footer .footer-margin p .fa-utensils {
+  padding-right: 16px;
+  font-size: 15px;
+}
+footer .footer-margin p .fa-hands-helping {
+  padding-right: 10px;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
