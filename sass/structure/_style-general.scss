@@ -1,14 +1,31 @@
+/*=== Paramètre pour que le scroll soit smooth ===*/
 html {
     scroll-behavior: smooth;
 }
 
-.index-header {
+/*=== HEADER DES PAGES ===*/
+header {
     position: relative;
     padding: 14px 0 12px 0;
     box-shadow: 0 0 6px 3px rgb(199, 199, 199);
     text-align: center;
+    /*=== ".fleche-retour" ne concerne que les pages de menus, PAS l'index ! ===*/
+    .fleche-retour {
+        position: absolute;
+        margin: 10px 0 0 5%;
+        font-size: 24px;
+        color: rgb(71, 71, 71);
+        &:hover {
+            background-image: linear-gradient(355deg, rgba(147,86,220,1) -20%, rgba(255,121,218,1) 100%);
+        	background-size: cover;
+	        color: transparent;
+	        -webkit-text-fill-color: transparent;
+	        -webkit-background-clip: text;
+            transform: scale(1.2);
+        }
+    }
 }
-
+/*=== Bandeau LOCALISATION sur la page d'accueil ===*/
 .localisation {
     padding: 18px 0 18px 0;
     display: flex;
@@ -26,6 +43,7 @@ html {
     }
 }
 
+/*=== Présentation de l'entreprise avec le bouton principal "EXPLORER" sur la page d'accueil ===*/
 .explorer {
     display: flex;
     flex-direction: column;
@@ -47,6 +65,7 @@ html {
     }
 }
 
+/*=== Bandeau d'explication du concept en trois étapes sur la page d'accueil ===*/
 .fonctionnement {
     margin: 35px 5% 60px 5%;
     h2 {
@@ -118,6 +137,7 @@ html {
     }
 }
 
+/*=== Listing des quatre restaurants sur la page d'accueil ===*/
 .restaurants {
     background-color: #F6F6F6;
     padding: 40px 0 40px 0;
@@ -165,6 +185,7 @@ html {
     }
 }
 
+/*=== FOOTER ===*/
 footer {
     background-color: #353535;
     .footer-margin {
