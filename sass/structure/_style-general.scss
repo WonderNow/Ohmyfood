@@ -2,11 +2,11 @@ html {
     scroll-behavior: smooth;
 }
 
-header {
-    text-align: center;
+.index-header {
+    position: relative;
     padding: 14px 0 12px 0;
     box-shadow: 0 0 6px 3px rgb(199, 199, 199);
-    position: relative;
+    text-align: center;
 }
 
 .localisation {

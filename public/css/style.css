@@ -81,11 +81,11 @@ html {
   scroll-behavior: smooth;
 }
 
-header {
-  text-align: center;
+.index-header {
+  position: relative;
   padding: 14px 0 12px 0;
   box-shadow: 0 0 6px 3px rgb(199, 199, 199);
-  position: relative;
+  text-align: center;
 }
 
 .localisation {
@@ -294,6 +294,29 @@ footer .footer-margin p .fa-utensils {
 footer .footer-margin p .fa-hands-helping {
   padding-right: 10px;
   font-size: 15px;
+}
+
+.menus-header {
+  position: relative;
+  padding: 14px 0 12px 0;
+  box-shadow: 0 0 6px 3px rgba(112, 112, 112, 0.5);
+  text-align: center;
+}
+.menus-header .fleche-retour {
+  position: absolute;
+  margin: 10px 0 0 5%;
+  font-size: 24px;
+  color: rgb(72, 72, 72);
+}
+
+.en-tete {
+  width: 100vw;
+  height: auto;
+}
+.en-tete img {
+  object-fit: cover;
+  width: 100%;
+  height: 300px;
 }
 
 /*# sourceMappingURL=style.css.map */
