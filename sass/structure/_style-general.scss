@@ -158,28 +158,7 @@ html {
                     }
                 }
                 .coeur {
-                    .fas {
-                        cursor: pointer;
-                        font-size: 30px;
-                        margin-top: 6px;
-                        position: absolute;
-                        color: transparent; // hide text fill
-                        background-image: linear-gradient(355deg, rgba(147,86,220,1) -20%, rgba(255,121,218,1) 100%);
-                        background-clip: text; // use text as clipping mask for bg
-                        -webkit-background-clip: text;
-                        opacity: 0%;
-                        transition: 0.2s;
-                        &:hover {
-                            opacity: 100%;
-                            transform: scale(1.2);
-                        }
-                    }
-                    .far {
-                        pointer-events: none;
-                        font-size: 30px;
-                        margin-top: 6px;
-                        color: #000;
-                    }
+                    @include coeur;
                 }
             }
         }
@@ -187,5 +166,36 @@ html {
 }
 
 footer {
-    @include footer;
+    background-color: #353535;
+    .footer-margin {
+        margin: 0 6% 0 6%;
+        padding: 30px 0 30px 0;
+        h1 {
+            margin-bottom: 21px;
+            font-size: 22px;
+            font-weight: 100;
+            letter-spacing: 1px;
+            color: #fff;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        p {
+            margin-bottom: 11px;
+            font-size: 17px;
+            width: max-content;
+            &:hover {
+                text-decoration: underline;
+            }
+            .fa-utensils {
+                padding-right: 16px;
+                font-size: 15px;
+            }
+            .fa-hands-helping {
+                padding-right: 10px;
+                font-size: 15px;
+            }
+        }
+    }
 }
