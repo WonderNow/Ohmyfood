@@ -1,5 +1,9 @@
 /*=== Page SCSS destinée à la mise en page SCSS spécifique aux pages de menus ===*/
 
+.header-menus {
+    box-shadow: 0 0 6px 3px rgba(65, 65, 65, 0.316);
+}
+
 .page-menus__image-en-tete {
     img {
         z-index: -2;
@@ -22,6 +26,7 @@
             width: 84%;
             padding-top: 1px;
             padding-left: 6%;
+            padding-right: 6px;
             font-size: 28px;
         }
         .coeur {
