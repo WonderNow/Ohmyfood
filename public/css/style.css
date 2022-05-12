@@ -61,8 +61,8 @@ p {
 }
 
 .bouton-principal {
-  width: 260px;
-  height: 60px;
+  width: 225px;
+  height: 50px;
   border-radius: 90px;
   display: flex;
   justify-content: center;
@@ -72,8 +72,8 @@ p {
   background: linear-gradient(355deg, rgb(147, 86, 220) 2%, rgb(255, 121, 218) 100%);
 }
 .bouton-principal p {
-  color: white;
-  font-size: 19px;
+  color: #fff;
+  font-size: 16px;
   font-weight: 500;
   padding-bottom: 2px;
 }

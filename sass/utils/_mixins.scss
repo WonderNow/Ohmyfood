@@ -3,8 +3,8 @@
 }
 
 @mixin bouton-principal {
-    width: 260px;
-    height: 60px;
+    width: 225px;
+    height: 50px;
     border-radius: 90px;
     display: flex;
     justify-content: center;
@@ -13,8 +13,8 @@
     transition: 0.2s;
     @include gradient;
     p {
-        color: white;
-        font-size: 19px;
+        color: #fff;
+        font-size: 16px;
         font-weight: 500;
         padding-bottom: 2px;
     }
