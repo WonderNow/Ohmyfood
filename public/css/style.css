@@ -34,7 +34,7 @@ body {
 
 h1 {
   font-family: Shrikhand, Helvetica, sans-serif;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: 700;
   letter-spacing: 1px;
 }
@@ -91,7 +91,7 @@ html {
 /*=== HEADER DES PAGES ===*/
 header {
   position: relative;
-  padding: 14px 0 12px 0;
+  padding: 12px 0 10px 0;
   box-shadow: 0 0 6px 3px rgb(199, 199, 199);
   text-align: center;
   /*=== ".fleche-retour" ne concerne que les pages de menus, PAS l'index ! ===*/
