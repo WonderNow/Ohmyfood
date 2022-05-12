@@ -114,7 +114,7 @@ header .fleche-retour:hover {
 
 /*=== Bandeau LOCALISATION sur la page d'accueil ===*/
 .localisation {
-  padding: 18px 0 18px 0;
+  padding: 13px 0 13px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -122,11 +122,13 @@ header .fleche-retour:hover {
 }
 .localisation .fa-map-marker-alt {
   padding-right: 18px;
-  font-size: 20px;
+  font-size: 19px;
+  color: #353535;
 }
 .localisation__text {
-  font-size: 20px;
-  font-weight: 700;
+  padding-top: 3px;
+  font-size: 19px;
+  font-weight: 500;
   color: #4a4a4a;
 }
 
