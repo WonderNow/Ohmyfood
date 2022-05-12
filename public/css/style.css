@@ -246,10 +246,18 @@ header .fleche-retour:hover {
   border-radius: 20px;
   box-shadow: 0 5px 14px rgb(215, 215, 215);
   background-color: none;
-  transition: 0.2s;
 }
-.restaurants__margin .restaurants__box:hover {
-  transform: scale(1.02);
+.restaurants__margin .restaurants__box .nouveau {
+  position: absolute;
+  padding: 5px 8px;
+  background-color: #99E2D0;
+  margin-top: 12px;
+  right: 8%;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: 600;
+  color: #199677;
+  pointer-events: none;
 }
 .restaurants__margin .restaurants__box img {
   object-fit: cover;
