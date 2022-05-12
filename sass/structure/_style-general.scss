@@ -79,18 +79,18 @@ header {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-bottom: 30px;
+        margin-bottom: 25px;
         cursor: default;
         .cercle {
             position: absolute;
             margin-right: 84%;
-            width: 30px;
-            height: 30px;
-            border-radius: 15px;
+            width: 26px;
+            height: 26px;
+            border-radius: 13px;
             background: $couleur-primaire;
             color: #fff;
             text-align: center;
-            line-height: 200%;
+            line-height: 180%;
             pointer-events: none;
             z-index: 2;
         }
@@ -101,26 +101,28 @@ header {
             padding-left: 10%;
             background-color: #F6F6F6;
             width: 94%;
-            height: 85px;
+            height: 72px;
             border-radius: 20px;
-            box-shadow: 0 5px 14px rgb(215, 215, 215);
+            box-shadow: 0 5px 14px rgb(220, 220, 220);
             transition: 0.2s;
             .fa-mobile-alt {
-                font-size: 25px;
+                font-size: 23px;
                 color: #7E7E7E;
-                padding-right: 7px;
+                padding-left: 2px;
+                padding-right: 5px;
             }
             .fa-list {
-                font-size: 23px;
+                font-size: 20px;
+                padding-right: 2px;
                 color: #7E7E7E;
             }
             .fa-store {
-                font-size: 20px;
+                font-size: 18px;
                 color: #7E7E7E;
             }
             &__texte {
                 font-weight: 800;
-                font-size: 18px;
+                font-size: 17px;
                 color: rgb(51, 51, 51);
                 padding-left: 6%;
                 padding-bottom: 1px;
