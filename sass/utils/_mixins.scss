@@ -28,7 +28,7 @@
 @mixin coeur {
     .fas {
         cursor: pointer;
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 6px;
         position: absolute;
         color: transparent; // hide text fill
@@ -44,8 +44,8 @@
     }
     .far {
         pointer-events: none;
-        font-size: 30px;
+        font-size: 26px;
         margin-top: 6px;
-        color: #000;
+        color: rgb(74, 74, 74);
     }
 }
