@@ -22,16 +22,20 @@
     border-radius: 50px 50px 0 0;
     .nom-resto-coeur {
         display: flex;
-        padding: 25px 0 35px 0;
+        padding: 32px 0 35px 0;
         h1 {
             width: 84%;
             padding-top: 1px;
             padding-left: 6%;
             padding-right: 6px;
-            font-size: 28px;
+            font-size: 26px;
         }
         .coeur {
             @include coeur;
+            margin-top: -2px;
+            @media screen and (min-width: 725px) {
+                margin-left: 7%;
+            }
             .fas {
                 font-size: 27px;
             }

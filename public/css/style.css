@@ -353,14 +353,17 @@ footer .footer-margin p .fa-hands-helping {
 }
 .carte-complete-menu .nom-resto-coeur {
   display: flex;
-  padding: 25px 0 35px 0;
+  padding: 32px 0 35px 0;
 }
 .carte-complete-menu .nom-resto-coeur h1 {
   width: 84%;
   padding-top: 1px;
   padding-left: 6%;
   padding-right: 6px;
-  font-size: 28px;
+  font-size: 26px;
+}
+.carte-complete-menu .nom-resto-coeur .coeur {
+  margin-top: -2px;
 }
 .carte-complete-menu .nom-resto-coeur .coeur .fas {
   cursor: pointer;
@@ -383,6 +386,11 @@ footer .footer-margin p .fa-hands-helping {
   font-size: 26px;
   margin-top: 6px;
   color: rgb(74, 74, 74);
+}
+@media screen and (min-width: 725px) {
+  .carte-complete-menu .nom-resto-coeur .coeur {
+    margin-left: 7%;
+  }
 }
 .carte-complete-menu .nom-resto-coeur .coeur .fas {
   font-size: 27px;
