@@ -51,8 +51,8 @@ h3 {
 }
 
 h4 {
-  font-size: 22px;
-  font-weight: 300;
+  font-size: 17px;
+  font-weight: 400;
 }
 
 p {
@@ -353,7 +353,7 @@ footer .footer-margin p .fa-hands-helping {
 }
 .carte-complete-menu .nom-resto-coeur {
   display: flex;
-  padding: 32px 0 35px 0;
+  padding: 32px 0 32px 0;
 }
 .carte-complete-menu .nom-resto-coeur h1 {
   width: 84%;
@@ -407,26 +407,26 @@ footer .footer-margin p .fa-hands-helping {
 }
 .menu-margin .menu-sous-titre .soulignage {
   background-color: #99E2D0;
-  width: 55px;
+  width: 44px;
   height: 3px;
   margin-top: 5px;
 }
 .menu-margin .mets-box {
   background-color: #fff;
-  margin-bottom: 18px;
+  margin-bottom: 14px;
   border-radius: 15px;
-  height: 80px;
-  padding: 12px 10px 12px 3%;
+  height: 72px;
+  padding: 15px 10px 15px 3%;
   box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
 }
 .menu-margin .mets-box .nom-mets {
-  font-size: 21px;
+  font-size: 18px;
   font-weight: 600;
-  margin: 0 0 5px 0;
+  margin-bottom: 2px;
 }
 .menu-margin .mets-box .details-mets {
-  color: #525252;
-  font-size: 18px;
+  color: #4c4c4c;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
