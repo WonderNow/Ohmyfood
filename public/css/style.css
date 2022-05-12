@@ -340,7 +340,8 @@ footer .footer-margin p .fa-hands-helping {
   z-index: -2;
   object-fit: cover;
   width: 100%;
-  height: 340px;
+  min-height: 278px;
+  max-height: 440px;
 }
 
 .carte-complete-menu {
