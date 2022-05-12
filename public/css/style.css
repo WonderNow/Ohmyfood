@@ -232,17 +232,17 @@ header .fleche-retour:hover {
 /*=== Listing des quatre restaurants sur la page d'accueil ===*/
 .restaurants {
   background-color: #F6F6F6;
-  padding: 55px 0 38px 0;
+  padding: 53px 0 38px 0;
 }
 .restaurants__margin {
   margin: 0 5% 0 5%;
 }
 .restaurants__margin h2 {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .restaurants__margin .restaurants__box {
-  height: 315px;
-  margin-bottom: 30px;
+  height: 250px;
+  margin-bottom: 18px;
   border-radius: 20px;
   box-shadow: 0 5px 14px rgb(215, 215, 215);
   background-color: none;
@@ -261,14 +261,15 @@ header .fleche-retour:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin: 14px 8% 10px 6%;
+  margin: 10px 8% 10px 6%;
 }
 .restaurants__margin .restaurants__box--details .texte-restaurant .nom-restaurant {
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 900;
-  margin: 0 0 8px 0;
+  margin: 0 0 2px 0;
 }
 .restaurants__margin .restaurants__box--details .texte-restaurant .ville-restaurant {
+  font-size: 17px;
   color: #525252;
 }
 .restaurants__margin .restaurants__box--details .coeur .fas {
