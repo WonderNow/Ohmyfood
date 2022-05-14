@@ -72,71 +72,88 @@ header {
 /*=== Bandeau d'explication du concept en trois étapes sur la page d'accueil ===*/
 .fonctionnement {
     margin: 46px 5% 70px 5%;
+    @media screen and (min-width: 1000px) {
+        margin: 46px 8% 70px 8%;
+    }
     h2 {
         margin-bottom: 25px;
     }
-    .categorie {
+    .categories-liste {
         display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-bottom: 25px;
-        cursor: default;
-        .cercle {
-            position: absolute;
-            margin-right: 84%;
-            width: 26px;
-            height: 26px;
-            border-radius: 13px;
-            background: $couleur-primaire;
-            color: #fff;
-            text-align: center;
-            line-height: 180%;
-            pointer-events: none;
-            z-index: 2;
+        flex-direction: column;
+        @media screen and (min-width: 1000px) {
+            flex-direction: row;
+            justify-content: space-between;
         }
-        .box {
+        .categorie {
             display: flex;
-            justify-content: left;
+            justify-content: center;
             align-items: center;
-            padding-left: 10%;
-            background-color: #F6F6F6;
-            width: 94%;
-            height: 72px;
-            border-radius: 20px;
-            box-shadow: 0 5px 14px rgb(220, 220, 220);
-            transition: 0.2s;
-            .fa-mobile-alt {
-                font-size: 23px;
-                color: #7E7E7E;
-                padding-left: 2px;
-                padding-right: 5px;
+            margin-bottom: 25px;
+            cursor: default;
+            .cercle {
+                position: absolute;
+                margin-right: 84%;
+                width: 26px;
+                height: 26px;
+                border-radius: 13px;
+                background: $couleur-primaire;
+                color: #fff;
+                text-align: center;
+                line-height: 180%;
+                pointer-events: none;
+                z-index: 2;
+                @media screen and (min-width: 1000px) {
+                    margin-right: 25%;
+                }
             }
-            .fa-list {
-                font-size: 20px;
-                padding-right: 2px;
-                color: #7E7E7E;
-            }
-            .fa-store {
-                font-size: 18px;
-                color: #7E7E7E;
-            }
-            &__texte {
-                font-weight: 800;
-                font-size: 17px;
-                color: rgb(51, 51, 51);
-                padding-left: 6%;
-                padding-bottom: 1px;
-            }
-            &:hover {
-                background-color: #F5EDFF;
+            .box {
+                display: flex;
+                justify-content: left;
+                align-items: center;
+                padding-left: 10%;
+                background-color: #F6F6F6;
+                width: 94%;
+                height: 72px;
+                border-radius: 20px;
+                box-shadow: 0 5px 14px rgb(220, 220, 220);
+                transition: 0.2s;
+                @media screen and (min-width: 1000px) {
+                    width: 25vw;
+                }
                 .fa-mobile-alt {
-                    color: $couleur-primaire;
+                    font-size: 23px;
+                    color: #7E7E7E;
+                    padding-left: 2px;
+                    padding-right: 5px;
                 }
                 .fa-list {
-                    color: $couleur-primaire;
+                    font-size: 20px;
+                    padding-right: 2px;
+                    color: #7E7E7E;
                 }
                 .fa-store {
-                    color: $couleur-primaire;
+                    font-size: 18px;
+                    color: #7E7E7E;
+                }
+                &__texte {
+                    font-weight: 800;
+                    font-size: 17px;
+                    color: rgb(51, 51, 51);
+                    padding-left: 6%;
+                    padding-bottom: 1px;
+                }
+                &:hover {
+                    background-color: #F5EDFF;
+                    .fa-mobile-alt {
+                        color: $couleur-primaire;
+                    }
+                    .fa-list {
+                        color: $couleur-primaire;
+                    }
+                    .fa-store {
+                        color: $couleur-primaire;
+                    }
                 }
             }
         }
@@ -149,51 +166,83 @@ header {
     padding: 53px 0 45px 0;
     &__margin {
         margin: 0 5% 0 5%;
+        @media screen and (min-width: 1000px) {
+            margin: 0 8% 0 8%;
+        }
         h2 {
             margin-bottom: 20px;
         }
-        .restaurants__box {
-            height: 250px;
-            margin-bottom: 18px;
-            border-radius: 20px;
-            box-shadow: 0 5px 14px rgb(215, 215, 215);
-            background-color: none;
-            .nouveau {
-                position: absolute;
-                padding: 5px 8px;
-                background-color: $couleur-tertiaire;
-                margin-top: 12px;
-                right: 8%;
-                border-radius: 3px;
-                font-size: 14px;
-                font-weight: 600;
-                color: #199677;
-                pointer-events: none;
-            }
-            img {
-                object-fit: cover;
-                width: 100%;
-                height: 70%;
-                border-radius: 20px 20px 0 0;
-            }
-            &--details {
-                display: flex;
-                flex-direction: row;
+        .restaurants-liste {
+            display: flex;
+            flex-direction: column;
+            @media screen and (min-width: 1000px) {
                 justify-content: space-between;
-                margin: 10px 8% 10px 6%;
-                .texte-restaurant {
-                    .nom-restaurant {
-                        font-size: 19px;
-                        font-weight: 900;
-                        margin: 0 0 2px 0;
-                    }
-                    .ville-restaurant {
-                        font-size: 17px;
-                        color: #525252;
+
+            }
+            &__rang-1 {
+                @media screen and (min-width: 1000px) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+            &__rang-2 {
+                @media screen and (min-width: 1000px) {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                }
+            }
+            .restaurants__box {
+                height: 250px;
+                margin-bottom: 18px;
+                border-radius: 20px;
+                box-shadow: 0 5px 14px rgb(215, 215, 215);
+                background-color: none;
+                @media screen and (min-width: 1000px) {
+                    width: 40.5vw;
+                    margin-bottom: 2.5vw;
+                }
+                .nouveau {
+                    position: absolute;
+                    padding: 5px 8px;
+                    background-color: $couleur-tertiaire;
+                    margin-top: 12px;
+                    right: 8%;
+                    border-radius: 3px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    color: #199677;
+                    pointer-events: none;
+                    @media screen and (min-width: 1000px) {
+                        right: 9.25%;
                     }
                 }
-                .coeur {
-                    @include coeur;
+                img {
+                    object-fit: cover;
+                    width: 100%;
+                    height: 70%;
+                    border-radius: 20px 20px 0 0;
+                }
+                &--details {
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-between;
+                    margin: 10px 8% 10px 6%;
+                    .texte-restaurant {
+                        .nom-restaurant {
+                            font-size: 19px;
+                            font-weight: 900;
+                            margin: 0 0 2px 0;
+                        }
+                        .ville-restaurant {
+                            font-size: 17px;
+                            color: #525252;
+                        }
+                    }
+                    .coeur {
+                        @include coeur;
+                    }
                 }
             }
         }
@@ -206,11 +255,14 @@ footer {
     .footer-margin {
         margin: 0 6% 0 6%;
         padding: 25px 0 25px 0;
+        @media screen and (min-width: 1000px) {
+            margin: 0 8% 0 8%;
+        }
         h1 {
             margin-bottom: 21px;
             font-size: 19px;
             font-weight: 300;
-            letter-spacing: 2px;
+            letter-spacing: 1px;
             color: #fff;
         }
         a {

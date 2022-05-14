@@ -159,17 +159,32 @@ header .fleche-retour:hover {
 .fonctionnement {
   margin: 46px 5% 70px 5%;
 }
+@media screen and (min-width: 1000px) {
+  .fonctionnement {
+    margin: 46px 8% 70px 8%;
+  }
+}
 .fonctionnement h2 {
   margin-bottom: 25px;
 }
-.fonctionnement .categorie {
+.fonctionnement .categories-liste {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .fonctionnement .categories-liste {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.fonctionnement .categories-liste .categorie {
   display: flex;
   justify-content: center;
   align-items: center;
   margin-bottom: 25px;
   cursor: default;
 }
-.fonctionnement .categorie .cercle {
+.fonctionnement .categories-liste .categorie .cercle {
   position: absolute;
   margin-right: 84%;
   width: 26px;
@@ -182,7 +197,12 @@ header .fleche-retour:hover {
   pointer-events: none;
   z-index: 2;
 }
-.fonctionnement .categorie .box {
+@media screen and (min-width: 1000px) {
+  .fonctionnement .categories-liste .categorie .cercle {
+    margin-right: 25%;
+  }
+}
+.fonctionnement .categories-liste .categorie .box {
   display: flex;
   justify-content: left;
   align-items: center;
@@ -194,38 +214,43 @@ header .fleche-retour:hover {
   box-shadow: 0 5px 14px rgb(220, 220, 220);
   transition: 0.2s;
 }
-.fonctionnement .categorie .box .fa-mobile-alt {
+@media screen and (min-width: 1000px) {
+  .fonctionnement .categories-liste .categorie .box {
+    width: 25vw;
+  }
+}
+.fonctionnement .categories-liste .categorie .box .fa-mobile-alt {
   font-size: 23px;
   color: #7E7E7E;
   padding-left: 2px;
   padding-right: 5px;
 }
-.fonctionnement .categorie .box .fa-list {
+.fonctionnement .categories-liste .categorie .box .fa-list {
   font-size: 20px;
   padding-right: 2px;
   color: #7E7E7E;
 }
-.fonctionnement .categorie .box .fa-store {
+.fonctionnement .categories-liste .categorie .box .fa-store {
   font-size: 18px;
   color: #7E7E7E;
 }
-.fonctionnement .categorie .box__texte {
+.fonctionnement .categories-liste .categorie .box__texte {
   font-weight: 800;
   font-size: 17px;
   color: rgb(51, 51, 51);
   padding-left: 6%;
   padding-bottom: 1px;
 }
-.fonctionnement .categorie .box:hover {
+.fonctionnement .categories-liste .categorie .box:hover {
   background-color: #F5EDFF;
 }
-.fonctionnement .categorie .box:hover .fa-mobile-alt {
+.fonctionnement .categories-liste .categorie .box:hover .fa-mobile-alt {
   color: #9356DC;
 }
-.fonctionnement .categorie .box:hover .fa-list {
+.fonctionnement .categories-liste .categorie .box:hover .fa-list {
   color: #9356DC;
 }
-.fonctionnement .categorie .box:hover .fa-store {
+.fonctionnement .categories-liste .categorie .box:hover .fa-store {
   color: #9356DC;
 }
 
@@ -237,17 +262,51 @@ header .fleche-retour:hover {
 .restaurants__margin {
   margin: 0 5% 0 5%;
 }
+@media screen and (min-width: 1000px) {
+  .restaurants__margin {
+    margin: 0 8% 0 8%;
+  }
+}
 .restaurants__margin h2 {
   margin-bottom: 20px;
 }
-.restaurants__margin .restaurants__box {
+.restaurants__margin .restaurants-liste {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .restaurants__margin .restaurants-liste {
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurants__margin .restaurants-liste__rang-1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .restaurants__margin .restaurants-liste__rang-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.restaurants__margin .restaurants-liste .restaurants__box {
   height: 250px;
   margin-bottom: 18px;
   border-radius: 20px;
   box-shadow: 0 5px 14px rgb(215, 215, 215);
   background-color: none;
 }
-.restaurants__margin .restaurants__box .nouveau {
+@media screen and (min-width: 1000px) {
+  .restaurants__margin .restaurants-liste .restaurants__box {
+    width: 40.5vw;
+    margin-bottom: 2.5vw;
+  }
+}
+.restaurants__margin .restaurants-liste .restaurants__box .nouveau {
   position: absolute;
   padding: 5px 8px;
   background-color: #99E2D0;
@@ -259,28 +318,33 @@ header .fleche-retour:hover {
   color: #199677;
   pointer-events: none;
 }
-.restaurants__margin .restaurants__box img {
+@media screen and (min-width: 1000px) {
+  .restaurants__margin .restaurants-liste .restaurants__box .nouveau {
+    right: 9.25%;
+  }
+}
+.restaurants__margin .restaurants-liste .restaurants__box img {
   object-fit: cover;
   width: 100%;
   height: 70%;
   border-radius: 20px 20px 0 0;
 }
-.restaurants__margin .restaurants__box--details {
+.restaurants__margin .restaurants-liste .restaurants__box--details {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 10px 8% 10px 6%;
 }
-.restaurants__margin .restaurants__box--details .texte-restaurant .nom-restaurant {
+.restaurants__margin .restaurants-liste .restaurants__box--details .texte-restaurant .nom-restaurant {
   font-size: 19px;
   font-weight: 900;
   margin: 0 0 2px 0;
 }
-.restaurants__margin .restaurants__box--details .texte-restaurant .ville-restaurant {
+.restaurants__margin .restaurants-liste .restaurants__box--details .texte-restaurant .ville-restaurant {
   font-size: 17px;
   color: #525252;
 }
-.restaurants__margin .restaurants__box--details .coeur .fas {
+.restaurants__margin .restaurants-liste .restaurants__box--details .coeur .fas {
   cursor: pointer;
   font-size: 26px;
   margin-top: 6px;
@@ -292,11 +356,11 @@ header .fleche-retour:hover {
   opacity: 0%;
   transition: 0.2s;
 }
-.restaurants__margin .restaurants__box--details .coeur .fas:hover {
+.restaurants__margin .restaurants-liste .restaurants__box--details .coeur .fas:hover {
   opacity: 100%;
   transform: scale(1.2);
 }
-.restaurants__margin .restaurants__box--details .coeur .far {
+.restaurants__margin .restaurants-liste .restaurants__box--details .coeur .far {
   pointer-events: none;
   font-size: 26px;
   margin-top: 6px;
@@ -311,11 +375,16 @@ footer .footer-margin {
   margin: 0 6% 0 6%;
   padding: 25px 0 25px 0;
 }
+@media screen and (min-width: 1000px) {
+  footer .footer-margin {
+    margin: 0 8% 0 8%;
+  }
+}
 footer .footer-margin h1 {
   margin-bottom: 21px;
   font-size: 19px;
   font-weight: 300;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #fff;
 }
 footer .footer-margin a {
