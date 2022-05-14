@@ -430,13 +430,12 @@ footer .footer-margin p .fa-hands-helping {
 }
 .carte-complete-menu .nom-resto-coeur {
   display: flex;
-  padding: 32px 0 32px 0;
+  justify-content: space-between;
+  padding: 32px 8% 32px 8%;
 }
 .carte-complete-menu .nom-resto-coeur h1 {
   width: 84%;
   padding-top: 1px;
-  padding-left: 6%;
-  padding-right: 6px;
   font-size: 26px;
 }
 .carte-complete-menu .nom-resto-coeur .coeur {
@@ -464,11 +463,6 @@ footer .footer-margin p .fa-hands-helping {
   margin-top: 6px;
   color: rgb(74, 74, 74);
 }
-@media screen and (min-width: 725px) {
-  .carte-complete-menu .nom-resto-coeur .coeur {
-    margin-left: 7%;
-  }
-}
 .carte-complete-menu .nom-resto-coeur .coeur .fas {
   font-size: 27px;
 }
@@ -479,16 +473,34 @@ footer .footer-margin p .fa-hands-helping {
 .menu-margin {
   margin: 0 3% 0 3%;
 }
-.menu-margin .menu-sous-titre {
+@media screen and (min-width: 1000px) {
+  .menu-margin {
+    margin: 0 8% 0 8%;
+  }
+}
+.menu-margin .liste-repas {
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .menu-margin .liste-repas {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.menu-margin .liste-repas .partie-repas {
+  padding-bottom: 26px;
+}
+.menu-margin .liste-repas .partie-repas .menu-sous-titre {
   margin: 0 0 15px 2%;
 }
-.menu-margin .menu-sous-titre .soulignage {
+.menu-margin .liste-repas .partie-repas .menu-sous-titre .soulignage {
   background-color: #99E2D0;
   width: 44px;
   height: 3px;
   margin-top: 5px;
 }
-.menu-margin .mets-box {
+.menu-margin .liste-repas .partie-repas .mets-box {
   background-color: #fff;
   margin-bottom: 14px;
   border-radius: 15px;
@@ -496,12 +508,17 @@ footer .footer-margin p .fa-hands-helping {
   padding: 15px 10px 15px 3%;
   box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
 }
-.menu-margin .mets-box .nom-mets {
+@media screen and (min-width: 1000px) {
+  .menu-margin .liste-repas .partie-repas .mets-box {
+    width: 26vw;
+  }
+}
+.menu-margin .liste-repas .partie-repas .mets-box .nom-mets {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 2px;
 }
-.menu-margin .mets-box .details-mets {
+.menu-margin .liste-repas .partie-repas .mets-box .details-mets {
   color: #4c4c4c;
   font-size: 15px;
 }
