@@ -1,6 +1,56 @@
 /*=== Paramètre pour que le scroll soit smooth ===*/
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/*=== LOADER ===*/
+.loader {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.83);
+    width: 100vw;
+    height: 100vh;
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 1s ease-in-out;
+    animation: disparition 0.1s 1.8s forwards;
+}
+
+.point {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin: 0 20px;
+    animation: loader infinite 0.3s alternate;
+}
+
+.p1 {
+    background-color: $couleur-primaire;
+}
+
+.p2 {
+    background-color: $couleur-secondaire;
+    animation-delay: 0.05s;
+}
+
+.p3 {
+    background-color: $couleur-tertiaire;
+    animation-delay: 0.1s;
+}
+
+@keyframes loader {
+    100% {
+        transform: translateY(-30px);
+    }
+}
+
+@keyframes disparition {
+    100% {
+        opacity: 0%;
+        pointer-events: none;
+    }
 }
 
 /*=== HEADER DES PAGES ===*/
