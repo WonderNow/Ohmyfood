@@ -82,6 +82,14 @@ p {
   transform: scale(1.02);
   filter: brightness(108%);
 }
+@media screen and (min-width: 1000px) {
+  .bouton-principal {
+    width: 230px;
+  }
+  .bouton-principal p {
+    font-size: 17px;
+  }
+}
 
 /*=== Paramètre pour que le scroll soit smooth ===*/
 html {
@@ -287,6 +295,7 @@ header .fleche-retour:hover {
   font-size: 17px;
   color: rgb(51, 51, 51);
   padding-left: 6%;
+  padding-right: 10px;
   padding-bottom: 1px;
 }
 .fonctionnement .categories-liste .categorie .box:hover {
