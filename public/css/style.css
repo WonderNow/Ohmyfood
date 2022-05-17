@@ -568,6 +568,7 @@ footer .footer-margin p .fa-hands-helping {
   height: 72px;
   padding: 15px 10px 15px 3%;
   box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
+  cursor: pointer;
 }
 @media screen and (min-width: 1000px) {
   .menu-margin .liste-repas .partie-repas .mets-box {
