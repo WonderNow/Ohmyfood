@@ -64,12 +64,16 @@ p {
   width: 225px;
   height: 50px;
   border-radius: 90px;
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: center;
   align-items: center;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.275);
   transition: 0.2s;
   background: linear-gradient(355deg, rgb(147, 86, 220) 2%, rgb(255, 121, 218) 100%);
+  margin: 0;
+  padding: 0;
 }
 .bouton-principal p {
   color: #fff;
@@ -562,27 +566,103 @@ footer .footer-margin p .fa-hands-helping {
   margin-top: 5px;
 }
 .menu-margin .liste-repas .partie-repas .mets-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: #fff;
   margin-bottom: 14px;
-  border-radius: 15px;
   height: 72px;
-  padding: 15px 10px 15px 3%;
+  padding: 15px 0px 15px 3%;
   box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
+  border-radius: 15px;
+  overflow: hidden;
   cursor: pointer;
+}
+.menu-margin .liste-repas .partie-repas .mets-box:hover .mets__prix-check {
+  margin-right: 0;
+}
+.menu-margin .liste-repas .partie-repas .mets-box:hover .mets__prix-check .mets__prix-check--check .fa-check {
+  animation: rotation 0.5s ease-in-out;
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(-200deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
 @media screen and (min-width: 1000px) {
   .menu-margin .liste-repas .partie-repas .mets-box {
     width: 26vw;
   }
 }
-.menu-margin .liste-repas .partie-repas .mets-box .nom-mets {
+.menu-margin .liste-repas .partie-repas .mets-box .menu_spec {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+.menu-margin .liste-repas .partie-repas .mets-box .menu_spec .nom-mets {
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 2px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
-.menu-margin .liste-repas .partie-repas .mets-box .details-mets {
+.menu-margin .liste-repas .partie-repas .mets-box .menu_spec .details-mets {
   color: #4c4c4c;
   font-size: 15px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check {
+  margin-right: -65px;
+  display: flex;
+  transition: 0.5s;
+}
+.menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check--prix {
+  display: flex;
+  justify-content: last baseline;
+  align-items: end;
+  margin: 0 15px 14px 12px;
+}
+.menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check--prix p {
+  font-size: 17px;
+  font-weight: 800;
+}
+.menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check--check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 15px 15px 0;
+  width: 65px;
+  height: 72px;
+  background-color: #99E2D0;
+}
+.menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check--check .fa-check {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 22px;
+  height: 22px;
+  font-size: 14px;
+  color: #99E2D0;
+  padding-top: 2px;
+  padding-right: 1px;
+}
+
+.box-bouton-commander {
+  margin-top: 5px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.box-bouton-commander .bouton-commander {
+  width: 200px;
 }
 
 /*# sourceMappingURL=style.css.map */

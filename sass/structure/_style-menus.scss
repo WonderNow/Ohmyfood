@@ -66,26 +66,104 @@
                 }
             }
             .mets-box {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
                 background-color: #fff;
                 margin-bottom: 14px;
-                border-radius: 15px;
                 height: 72px;
-                padding: 15px 10px 15px 3%;
+                padding: 15px 0px 15px 3%;
                 box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
+                border-radius: 15px;
+                overflow: hidden;
                 cursor: pointer;
+                &:hover {
+                    .mets__prix-check {
+                        margin-right: 0;
+                    }
+                    .mets__prix-check .mets__prix-check--check .fa-check {
+                        @keyframes rotation {
+                            0% {
+                                transform: rotate(-200deg)
+                            }
+                            100% {
+                                transform: rotate(0);
+                            }
+                        }
+                        animation: rotation 0.5s ease-in-out;
+                    }
+                }
                 @media screen and (min-width: 1000px) {
                     width: 26vw;
                 }
-                .nom-mets {
-                    font-size: 18px;
-                    font-weight: 600;
-                    margin-bottom: 2px;
+                .menu_spec {
+                    display: flex;
+                    flex-direction: column;
+                    overflow: hidden;
+                    .nom-mets {
+                        font-size: 18px;
+                        font-weight: 600;
+                        margin-bottom: 2px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
+                    .details-mets {
+                        color: #4c4c4c;
+                        font-size: 15px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overflow: ellipsis;
+                    }
                 }
-                .details-mets {
-                    color: #4c4c4c;
-                    font-size: 15px;
+                .mets__prix-check {
+                    margin-right: -65px;
+                    display: flex;
+                    transition: 0.5s;
+                    &--prix {
+                        display: flex;
+                        justify-content: last baseline;
+                        align-items: end;
+                        margin: 0 15px 14px 12px;
+                        p{
+                            font-size: 17px;
+                            font-weight: 800;
+                        }
+                    }
+                    &--check {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 0 15px 15px 0;
+                        width: 65px;
+                        height: 72px;
+                        background-color: $couleur-tertiaire;
+                        .fa-check {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            background-color: #fff;
+                            border-radius: 50%;
+                            width: 22px;
+                            height: 22px;
+                            font-size: 14px;
+                            color: $couleur-tertiaire;
+                            padding-top: 2px;
+                            padding-right: 1px;
+                        }
+                    }
                 }
             }
         }
+    }
+}
+
+.box-bouton-commander {
+    margin-top: 5px;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    .bouton-commander {
+        width: 200px;
     }
 }

@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohmyfood - La palette du goût</title>
+    <link rel="stylesheet" href="../public/css/style.css">
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css">
+</head>
+
+<!-- Sommaire du HTML :-->
+<!-- 1. LOADER -->
+<!-- 2. HEADER -->
+<!-- 3. MAIN -->
+<!-- 4. EN-TÊTE -->
+<!-- 5. ENTRÉES -->
+<!-- 6. PLATS -->
+<!-- 7. DESSERTS -->
+<!-- 8. BOUTON COMMANDER -->
+<!-- 9. FOOTER -->
+
+<body>
+
+    <!-- ====== HEADER ====== -->
+    <header class="header-menus">
+        <a href="../index.html"><div class="fleche-retour"><i class="fas fa-arrow-left"></i></div></a>
+        <div class="logo-header"><h1>ohmyfood</h1></div>
+    </header>
+
+    <!-- ====== MAIN ====== -->
+    <main>
+
+        <!-- ====== Image de l'en-tête des menus ====== -->
+        <div class="page-menus__image-en-tete">
+            <img src="../img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Bannière du restaurant">
+        </div>
+
+        <!-- ====== Carte complète, avec entrées, plats et desserts ====== -->
+        <div class="carte-complete-menu">
+            <div class="nom-resto-coeur">
+                <h1>La palette du goût</h1>
+                <div class="coeur">
+                    <i class="fas fa-heart"></i> <!-- fas = solide -->
+                    <i class="far fa-heart"></i> <!-- far = regular -->
+                </div>
+            </div>
+
+            <!-- ====== Menu des ENTRÉES ====== -->
+            <div class="menu-margin">
+
+                <div class="liste-repas">
+
+                    <div class="partie-repas"> <!-- DÉBUT DES ENTRÉES -->
+
+                        <div class="menu-sous-titre"> <!-- Sous-titre "entrée" -->
+                            <h4>ENTRÉES</h4>
+                            <div class="soulignage"></div>
+                        </div>
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Fricassée d'escargot</p>
+                                <p class="details-mets">Au piment d'Espelette</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">25€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Foie gras de canard mi-cuit</p>
+                                <p class="details-mets">Et ses copeaux de truffe noire</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">35€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Oeuf au plat</p>
+                                <p class="details-mets">Assaisonné à la truffe sur lit de caviar</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">20€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                    </div> <!-- FIN DES ENTRÉES -->
+
+                    <div class="partie-repas"> <!-- DÉBUT DES PLATS -->
+
+                        <div class="menu-sous-titre">
+                            <h4>PLATS</h4>
+                            <div class="soulignage"></div>
+                        </div>
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Filet de boeuf aux herbes</p>
+                                <p class="details-mets">Accompagné de sa ribambelle de légumes</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">40€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Parmentier de queue de boeuf</p>
+                                <p class="details-mets">À la truffe noire sur sa purée de panais</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">35€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Filet de turbot</p>
+                                <p class="details-mets">Aux agrumes</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">44€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                    </div> <!-- FIN DES PLATS -->
+
+                    <div class="partie-repas"> <!-- DÉBUT DES DESSERTS -->
+
+                        <div class="menu-sous-titre">
+                            <h4>DESSERTS</h4>
+                            <div class="soulignage"></div>
+                        </div>
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Paris-Brest</p>
+                                <p class="details-mets">Revisité</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">18€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Macaron au chocolat d'exception</p>
+                                <p class="details-mets">Et glace à la vanille de Madagascar</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">22€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                        <div class="mets-box"> <!-- Début du met -->
+                            <div class="menu_spec">
+                                <p class="nom-mets">Mousse au chocolat</p>
+                                <p class="details-mets">Au piment d'Espelette et à la truffe noire</p>
+                            </div>
+                            <div class="mets__prix-check">
+                                <div class="mets__prix-check--prix">
+                                    <p class="prix">23€</p>
+                                </div>
+                                <div class="mets__prix-check--check">
+                                    <i class="fas fa-check"></i>
+                                </div>
+                            </div>
+                        </div><!-- Fin du met -->
+
+                    </div> <!-- FIN DES PLATS -->
+
+                </div> <!-- Fin de la liste des repas-->
+
+            </div> <!-- Fin de l'espace avec marge -->
+
+            <div class="box-bouton-commander"> <!-- Bouton "Commander" -->
+                <a href="#"><div class="bouton-principal bouton-commander"><p>Commander</p></div></a>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- ====== FOOTER ====== -->
+    <footer>
+        <div class="footer-margin">
+            <h1>Ohmyfood</h1>
+            
+            <p><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></p>
+            <p><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></p>
+            <p><a href="#">Mentions légales</a></p>
+            <p><a href="mailto:contact@ohmyfood.com">Contact</a></p>
+        </div>
+    </footer>
+</body>
+</html>

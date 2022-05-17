@@ -32,4 +32,6 @@ p {
 
 .bouton-principal {
     @include bouton-principal;
+    margin: 0;
+    padding: 0;
 }
