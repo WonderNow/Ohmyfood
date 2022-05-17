@@ -347,11 +347,15 @@ header .fleche-retour:hover {
   border-radius: 20px;
   box-shadow: 0 5px 14px rgb(215, 215, 215);
   background-color: none;
+  transition: 0.3s;
 }
 @media screen and (min-width: 1000px) {
   .restaurants__margin .restaurants-liste .restaurants__box {
     width: 40.5vw;
     margin-bottom: 2.5vw;
+  }
+  .restaurants__margin .restaurants-liste .restaurants__box:hover {
+    box-shadow: 0 5px 14px rgb(182, 182, 182);
   }
 }
 .restaurants__margin .restaurants-liste .restaurants__box .nouveau {
