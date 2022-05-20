@@ -493,7 +493,7 @@ footer .footer-margin p .fa-hands-helping {
   position: relative;
   background-color: #f6f6f6;
   margin-top: -55px;
-  padding-bottom: 60px;
+  padding-bottom: 55px;
   border-radius: 50px 50px 0 0;
 }
 .carte-complete-menu .nom-resto-coeur {
@@ -731,7 +731,7 @@ footer .footer-margin p .fa-hands-helping {
 }
 .box-bouton-commander {
   /* Bouton "Commander" */
-  margin-top: 3px;
+  margin-top: 7px;
   width: 100vw;
   display: flex;
   justify-content: center;
