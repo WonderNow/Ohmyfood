@@ -366,6 +366,7 @@ header .fleche-retour:hover {
 @media screen and (min-width: 1000px) {
   .restaurants__margin .restaurants-liste .restaurants__box {
     width: 40.5vw;
+    height: 260px;
     margin-bottom: 2.5vw;
   }
   .restaurants__margin .restaurants-liste .restaurants__box:hover {
