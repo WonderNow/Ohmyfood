@@ -372,22 +372,28 @@ header .fleche-retour:hover {
     box-shadow: 0 5px 14px rgb(182, 182, 182);
   }
 }
+.restaurants__margin .restaurants-liste .restaurants__box .box-nouveau {
+  display: flex;
+  justify-content: end;
+  margin-right: 20px;
+}
 .restaurants__margin .restaurants-liste .restaurants__box .nouveau {
   position: absolute;
+  z-index: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
   padding: 5px 8px;
-  background-color: #99E2D0;
-  margin-top: 12px;
-  right: 8%;
   border-radius: 3px;
   font-size: 14px;
   font-weight: 600;
-  color: #199677;
-  pointer-events: none;
-  z-index: 2;
+  color: #278870;
+  background-color: #99E2D0;
 }
 @media screen and (min-width: 1000px) {
   .restaurants__margin .restaurants-liste .restaurants__box .nouveau {
-    right: 9.25%;
+    font-size: 15px;
   }
 }
 .restaurants__margin .restaurants-liste .restaurants__box img {
@@ -455,6 +461,11 @@ footer .footer-margin h1 {
   letter-spacing: 1px;
   color: #fff;
 }
+@media screen and (min-width: 1000px) {
+  footer .footer-margin h1 {
+    font-size: 19px;
+  }
+}
 footer .footer-margin a {
   text-decoration: none;
   color: #fff;
@@ -463,6 +474,11 @@ footer .footer-margin p {
   margin-bottom: 8px;
   font-size: 15px;
   width: max-content;
+}
+@media screen and (min-width: 1000px) {
+  footer .footer-margin p {
+    font-size: 16px;
+  }
 }
 footer .footer-margin p:hover {
   text-decoration: underline;
@@ -500,6 +516,11 @@ footer .footer-margin p .fa-hands-helping {
   display: flex;
   justify-content: space-between;
   padding: 30px 6% 26px 5%;
+}
+@media screen and (min-width: 1000px) {
+  .carte-complete-menu .nom-resto-coeur {
+    padding: 30px 9% 26px 8.5%;
+  }
 }
 .carte-complete-menu .nom-resto-coeur h1 {
   width: 84%;
