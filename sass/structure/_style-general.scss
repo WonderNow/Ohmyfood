@@ -56,14 +56,14 @@ html {
 /*=== HEADER DES PAGES ===*/
 header {
     position: relative;
-    padding: 12px 0 10px 0;
+    padding: 10px 0 8px 0;
     box-shadow: 0 0 6px 3px rgb(199, 199, 199);
     text-align: center;
     /*=== ".fleche-retour" ne concerne que les pages de menus, PAS l'index ! ===*/
     .fleche-retour {
         position: absolute;
         margin: 10px 0 0 5%;
-        font-size: 24px;
+        font-size: 22px;
         color: rgb(71, 71, 71);
         &:hover {
             background-image: linear-gradient(355deg, rgba(147,86,220,1) -20%, rgba(255,121,218,1) 100%);
@@ -85,12 +85,12 @@ header {
     background-color: #EAEAEA;
     .fa-map-marker-alt {
         padding-right: 18px;
-        font-size: 19px;
+        font-size: 17px;
         color: #353535;
     }
     &__text {
         padding-top: 3px;
-        font-size: 19px;
+        font-size: 16px;
         font-weight: 500;
         color: #4a4a4a;
     }
@@ -121,7 +121,7 @@ header {
 
 /*=== Bandeau d'explication du concept en trois étapes sur la page d'accueil ===*/
 .fonctionnement {
-    margin: 46px 5% 70px 5%;
+    margin: 44px 5% 44px 5%;
     @media screen and (min-width: 1000px) {
         margin: 46px 8% 70px 8%;
     }
@@ -139,7 +139,7 @@ header {
             display: flex;
             justify-content: center;
             align-items: center;
-            margin-bottom: 25px;
+            margin-bottom: 22px;
             cursor: default;
             .cercle {
                 position: absolute;
@@ -172,23 +172,23 @@ header {
                     width: 25vw;
                 }
                 .fa-mobile-alt {
-                    font-size: 23px;
+                    font-size: 22px;
                     color: #7E7E7E;
                     padding-left: 2px;
                     padding-right: 5px;
                 }
                 .fa-list {
-                    font-size: 20px;
+                    font-size: 19px;
                     padding-right: 2px;
                     color: #7E7E7E;
                 }
                 .fa-store {
-                    font-size: 18px;
+                    font-size: 17px;
                     color: #7E7E7E;
                 }
                 &__texte {
                     font-weight: 800;
-                    font-size: 17px;
+                    font-size: 16px;
                     color: rgb(51, 51, 51);
                     padding-left: 6%;
                     padding-right: 10px;
@@ -214,21 +214,20 @@ header {
 /*=== Listing des quatre restaurants sur la page d'accueil ===*/
 .restaurants {
     background-color: #F6F6F6;
-    padding: 53px 0 45px 0;
+    padding: 49px 0 45px 0;
     &__margin {
         margin: 0 5% 0 5%;
         @media screen and (min-width: 1000px) {
             margin: 0 8% 0 8%;
         }
         h2 {
-            margin-bottom: 20px;
+            margin-bottom: 21px;
         }
         .restaurants-liste {
             display: flex;
             flex-direction: column;
             @media screen and (min-width: 1000px) {
                 justify-content: space-between;
-
             }
             &__rang-1 {
                 @media screen and (min-width: 1000px) {
@@ -245,7 +244,7 @@ header {
                 }
             }
             .restaurants__box {
-                height: 250px;
+                height: 243px;
                 margin-bottom: 18px;
                 border-radius: 20px;
                 box-shadow: 0 5px 14px rgb(215, 215, 215);
@@ -269,6 +268,7 @@ header {
                     font-weight: 600;
                     color: #199677;
                     pointer-events: none;
+                    z-index: 2;
                     @media screen and (min-width: 1000px) {
                         right: 9.25%;
                     }
@@ -276,8 +276,9 @@ header {
                 img {
                     object-fit: cover;
                     width: 100%;
-                    height: 70%;
+                    height: 69%;
                     border-radius: 20px 20px 0 0;
+                    z-index: -99;
                 }
                 &--details {
                     display: flex;
@@ -309,13 +310,13 @@ footer {
     background-color: #353535;
     .footer-margin {
         margin: 0 6% 0 6%;
-        padding: 25px 0 25px 0;
+        padding: 21px 0 26px 0;
         @media screen and (min-width: 1000px) {
             margin: 0 8% 0 8%;
         }
         h1 {
-            margin-bottom: 21px;
-            font-size: 19px;
+            margin-bottom: 18px;
+            font-size: 18px;
             font-weight: 300;
             letter-spacing: 1px;
             color: #fff;
@@ -326,7 +327,7 @@ footer {
         }
         p {
             margin-bottom: 8px;
-            font-size: 16px;
+            font-size: 15px;
             width: max-content;
             &:hover {
                 text-decoration: underline;

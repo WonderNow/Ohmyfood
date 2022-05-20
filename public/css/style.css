@@ -34,13 +34,13 @@ body {
 
 h1 {
   font-family: Shrikhand, Helvetica, sans-serif;
-  font-size: 30px;
+  font-size: 29px;
   font-weight: 700;
   letter-spacing: 1px;
 }
 
 h2 {
-  font-size: 25px;
+  font-size: 24px;
   font-weight: 900;
 }
 
@@ -51,8 +51,9 @@ h3 {
 }
 
 h4 {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 400;
+  color: rgb(75, 75, 75);
 }
 
 p {
@@ -61,8 +62,8 @@ p {
 }
 
 .bouton-principal {
-  width: 225px;
-  height: 50px;
+  width: 213px;
+  height: 49px;
   border-radius: 90px;
   margin: 0;
   padding: 0;
@@ -151,7 +152,7 @@ html {
 /*=== HEADER DES PAGES ===*/
 header {
   position: relative;
-  padding: 12px 0 10px 0;
+  padding: 10px 0 8px 0;
   box-shadow: 0 0 6px 3px rgb(199, 199, 199);
   text-align: center;
   /*=== ".fleche-retour" ne concerne que les pages de menus, PAS l'index ! ===*/
@@ -159,7 +160,7 @@ header {
 header .fleche-retour {
   position: absolute;
   margin: 10px 0 0 5%;
-  font-size: 24px;
+  font-size: 22px;
   color: rgb(71, 71, 71);
 }
 header .fleche-retour:hover {
@@ -182,12 +183,12 @@ header .fleche-retour:hover {
 }
 .localisation .fa-map-marker-alt {
   padding-right: 18px;
-  font-size: 19px;
+  font-size: 17px;
   color: #353535;
 }
 .localisation__text {
   padding-top: 3px;
-  font-size: 19px;
+  font-size: 16px;
   font-weight: 500;
   color: #4a4a4a;
 }
@@ -217,7 +218,7 @@ header .fleche-retour:hover {
 
 /*=== Bandeau d'explication du concept en trois étapes sur la page d'accueil ===*/
 .fonctionnement {
-  margin: 46px 5% 70px 5%;
+  margin: 44px 5% 44px 5%;
 }
 @media screen and (min-width: 1000px) {
   .fonctionnement {
@@ -241,7 +242,7 @@ header .fleche-retour:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: 25px;
+  margin-bottom: 22px;
   cursor: default;
 }
 .fonctionnement .categories-liste .categorie .cercle {
@@ -280,23 +281,23 @@ header .fleche-retour:hover {
   }
 }
 .fonctionnement .categories-liste .categorie .box .fa-mobile-alt {
-  font-size: 23px;
+  font-size: 22px;
   color: #7E7E7E;
   padding-left: 2px;
   padding-right: 5px;
 }
 .fonctionnement .categories-liste .categorie .box .fa-list {
-  font-size: 20px;
+  font-size: 19px;
   padding-right: 2px;
   color: #7E7E7E;
 }
 .fonctionnement .categories-liste .categorie .box .fa-store {
-  font-size: 18px;
+  font-size: 17px;
   color: #7E7E7E;
 }
 .fonctionnement .categories-liste .categorie .box__texte {
   font-weight: 800;
-  font-size: 17px;
+  font-size: 16px;
   color: rgb(51, 51, 51);
   padding-left: 6%;
   padding-right: 10px;
@@ -318,7 +319,7 @@ header .fleche-retour:hover {
 /*=== Listing des quatre restaurants sur la page d'accueil ===*/
 .restaurants {
   background-color: #F6F6F6;
-  padding: 53px 0 45px 0;
+  padding: 49px 0 45px 0;
 }
 .restaurants__margin {
   margin: 0 5% 0 5%;
@@ -329,7 +330,7 @@ header .fleche-retour:hover {
   }
 }
 .restaurants__margin h2 {
-  margin-bottom: 20px;
+  margin-bottom: 21px;
 }
 .restaurants__margin .restaurants-liste {
   display: flex;
@@ -355,7 +356,7 @@ header .fleche-retour:hover {
   }
 }
 .restaurants__margin .restaurants-liste .restaurants__box {
-  height: 250px;
+  height: 243px;
   margin-bottom: 18px;
   border-radius: 20px;
   box-shadow: 0 5px 14px rgb(215, 215, 215);
@@ -382,6 +383,7 @@ header .fleche-retour:hover {
   font-weight: 600;
   color: #199677;
   pointer-events: none;
+  z-index: 2;
 }
 @media screen and (min-width: 1000px) {
   .restaurants__margin .restaurants-liste .restaurants__box .nouveau {
@@ -391,8 +393,9 @@ header .fleche-retour:hover {
 .restaurants__margin .restaurants-liste .restaurants__box img {
   object-fit: cover;
   width: 100%;
-  height: 70%;
+  height: 69%;
   border-radius: 20px 20px 0 0;
+  z-index: -99;
 }
 .restaurants__margin .restaurants-liste .restaurants__box--details {
   display: flex;
@@ -438,7 +441,7 @@ footer {
 }
 footer .footer-margin {
   margin: 0 6% 0 6%;
-  padding: 25px 0 25px 0;
+  padding: 21px 0 26px 0;
 }
 @media screen and (min-width: 1000px) {
   footer .footer-margin {
@@ -446,8 +449,8 @@ footer .footer-margin {
   }
 }
 footer .footer-margin h1 {
-  margin-bottom: 21px;
-  font-size: 19px;
+  margin-bottom: 18px;
+  font-size: 18px;
   font-weight: 300;
   letter-spacing: 1px;
   color: #fff;
@@ -458,7 +461,7 @@ footer .footer-margin a {
 }
 footer .footer-margin p {
   margin-bottom: 8px;
-  font-size: 16px;
+  font-size: 15px;
   width: max-content;
 }
 footer .footer-margin p:hover {
@@ -482,7 +485,7 @@ footer .footer-margin p .fa-hands-helping {
   z-index: -2;
   object-fit: cover;
   width: 100%;
-  min-height: 278px;
+  min-height: 262px;
   max-height: 440px;
 }
 
@@ -496,12 +499,12 @@ footer .footer-margin p .fa-hands-helping {
 .carte-complete-menu .nom-resto-coeur {
   display: flex;
   justify-content: space-between;
-  padding: 32px 8% 32px 8%;
+  padding: 30px 6% 26px 5%;
 }
 .carte-complete-menu .nom-resto-coeur h1 {
   width: 84%;
-  padding-top: 1px;
-  font-size: 26px;
+  font-size: 27px;
+  font-weight: 500;
 }
 .carte-complete-menu .nom-resto-coeur .coeur {
   margin-top: -2px;
@@ -529,10 +532,10 @@ footer .footer-margin p .fa-hands-helping {
   color: rgb(74, 74, 74);
 }
 .carte-complete-menu .nom-resto-coeur .coeur .fas {
-  font-size: 27px;
+  font-size: 25px;
 }
 .carte-complete-menu .nom-resto-coeur .coeur .far {
-  font-size: 27px;
+  font-size: 25px;
 }
 
 .menu-margin {
@@ -554,10 +557,10 @@ footer .footer-margin p .fa-hands-helping {
   }
 }
 .menu-margin .liste-repas .partie-repas {
-  padding-bottom: 26px;
+  padding-bottom: 22px;
 }
 .menu-margin .liste-repas .partie-repas .menu-sous-titre {
-  margin: 0 0 15px 2%;
+  margin: 2px 0 14px 2%;
   animation: apparition 1s;
 }
 .menu-margin .liste-repas .partie-repas .menu-sous-titre .soulignage {
@@ -572,7 +575,7 @@ footer .footer-margin p .fa-hands-helping {
   align-items: center;
   background-color: #fff;
   margin-bottom: 14px;
-  height: 72px;
+  height: 65px;
   padding: 15px 0px 15px 3%;
   box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
   border-radius: 15px;
@@ -630,7 +633,7 @@ footer .footer-margin p .fa-hands-helping {
   margin: 0 15px 14px 12px;
 }
 .menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check--prix .prix {
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 600;
 }
 .menu-margin .liste-repas .partie-repas .mets-box .mets__prix-check--check {
@@ -728,13 +731,13 @@ footer .footer-margin p .fa-hands-helping {
 }
 .box-bouton-commander {
   /* Bouton "Commander" */
-  margin-top: 5px;
+  margin-top: 3px;
   width: 100vw;
   display: flex;
   justify-content: center;
 }
 .box-bouton-commander .bouton-commander {
-  width: 200px;
+  width: 180px;
 }
 
 /*# sourceMappingURL=style.css.map */

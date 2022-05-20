@@ -9,7 +9,7 @@
         z-index: -2;
         object-fit: cover;
         width: 100%;
-        min-height: 278px;
+        min-height: 262px;
         max-height: 440px;
     }
 }
@@ -23,20 +23,20 @@
     .nom-resto-coeur {
         display: flex;
         justify-content: space-between;
-        padding: 32px 8% 32px 8%;
+        padding: 30px 6% 26px 5%;
         h1 {
             width: 84%;
-            padding-top: 1px;
-            font-size: 26px;
+            font-size: 27px;
+            font-weight: 500;
         }
         .coeur {
             @include coeur;
             margin-top: -2px;
             .fas {
-                font-size: 27px;
+                font-size: 25px;
             }
             .far {
-                font-size: 27px;
+                font-size: 25px;
             }
         }
     }
@@ -55,9 +55,9 @@
             justify-content: space-between;
         }
         .partie-repas {
-            padding-bottom: 26px;
+            padding-bottom: 22px;
             .menu-sous-titre {
-                margin: 0 0 15px 2%;
+                margin: 2px 0 14px 2%;
                 animation: apparition 1s;
                 .soulignage {
                     background-color: $couleur-tertiaire;
@@ -72,7 +72,7 @@
                 align-items: center;
                 background-color: #fff;
                 margin-bottom: 14px;
-                height: 72px;
+                height: 65px;
                 padding: 15px 0px 15px 3%;
                 box-shadow: 0 3px 8px rgba(176, 176, 176, 0.404);
                 border-radius: 15px;
@@ -127,7 +127,7 @@
                         align-items: end;
                         margin: 0 15px 14px 12px;
                         .prix{
-                            font-size: 17px;
+                            font-size: 16px;
                             font-weight: 600;
                         }
                     }
@@ -232,11 +232,11 @@
 }
 
 .box-bouton-commander { /* Bouton "Commander" */
-    margin-top: 5px;
+    margin-top: 3px;
     width: 100vw;
     display: flex;
     justify-content: center;
     .bouton-commander {
-        width: 200px;
+        width: 180px;
     }
 }
