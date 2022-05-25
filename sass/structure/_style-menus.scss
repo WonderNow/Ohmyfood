@@ -27,10 +27,8 @@
         @media screen and (min-width: 1000px) {
             padding: 30px 9% 26px 8.5%;
         }
-        h1 {
+        h6 {
             width: 84%;
-            font-size: 27px;
-            font-weight: 500;
         }
         .coeur {
             @include coeur;
