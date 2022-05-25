@@ -26,6 +26,18 @@ h4 {
     color: rgb(75, 75, 75);
 }
 
+h5 {
+    font-family: Shrikhand, Helvetica, sans-serif;
+    margin-bottom: 18px;
+    font-size: 18px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: #fff;
+    @media screen and (min-width: 1000px) {
+        font-size: 19px;
+    }
+}
+
 p {
     font-size: 19px;
     color: #000;
