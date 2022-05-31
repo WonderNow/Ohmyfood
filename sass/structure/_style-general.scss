@@ -78,11 +78,14 @@ header {
 }
 /*=== Bandeau LOCALISATION sur la page d'accueil ===*/
 .localisation {
-    padding: 13px 7% 13px 0;
+    padding: 13px 5% 13px 0;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #EAEAEA;
+    @media screen and (min-width: 350px) {
+        padding: 13px 1% 13px 0;
+    }
     .fa-map-marker-alt {
         padding-right: 18px;
         font-size: 17px;

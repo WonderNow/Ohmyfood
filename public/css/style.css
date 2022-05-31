@@ -197,11 +197,16 @@ header .fleche-retour:hover {
 
 /*=== Bandeau LOCALISATION sur la page d'accueil ===*/
 .localisation {
-  padding: 13px 7% 13px 0;
+  padding: 13px 5% 13px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #EAEAEA;
+}
+@media screen and (min-width: 350px) {
+  .localisation {
+    padding: 13px 1% 13px 0;
+  }
 }
 .localisation .fa-map-marker-alt {
   padding-right: 18px;
